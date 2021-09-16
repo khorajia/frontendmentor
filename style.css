@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: url("images/pattern-background-desktop.svg") no-repeat top center
+    fixed;
+  background-color: hsl(225, 100%, 94%);
+  background-size: 100%;
+  font-size: 62.5%;
+
+  /* background: center / contain no-repeat
+      url("../../media/examples/firefox-logo.svg"),
+    #eee 35%; */
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+}
+
+.order {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  background-color: #fff;
+  width: 40rem;
+  margin: 25rem auto;
+  border-radius: 9px;
+  overflow: hidden;
+}
+.heading-1 {
+  font-size: 2.5rem;
+  margin-top: 3.5rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40rem;
+  gap: 3rem;
+}
+.hero-img {
+  width: 40rem;
+}
+.plan {
+  width: 30rem;
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  background-color: rgb(240, 245, 245);
+  padding: 1rem;
+  border-radius: 9px;
+}
+.margin-left {
+  margin-left: auto;
+}
+.order-details {
+  font-size: 1.6rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+.list {
+  list-style: none;
+}
+.list-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+ul li:last-child {
+  font-weight: 100;
+}
+.link:link,
+.link:visited {
+  font-size: 1.6rem;
+  color: hsl(245, 75%, 52%);
+}
+.link:hover,
+.link:active {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: hsl(245, 75%, 52%);
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1.6rem 7.2rem;
+  border-radius: 9px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  /* Put transition on original "state" */
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+}
+.btn--full:hover,
+.btn--full:active {
+  background-color: hsl(224, 62%, 56%);
+}
+
+.payment-btn {
+  display: grid;
+  place-items: center;
+}
+.cancel {
+  margin-bottom: 4rem;
+}
+.btn-cancel:link,
+.btn-cancel:visited {
+  color: hsl(228, 4%, 27%);
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.btn-cancel:hover,
+.btn-cancel:active {
+  color: rgb(8, 8, 8);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
